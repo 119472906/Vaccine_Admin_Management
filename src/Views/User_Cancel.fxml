@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserCancelController">
+   <children>
+      <Button id="btnView" fx:id="btnView" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetoview" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="View Timeslots" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnCancelApp" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnBookApp" fx:id="btnBookApp" layoutY="70.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#Movetoappointment" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <ImageView id="imgHse" fitHeight="68.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/BIS/Java/hse-ireland.jpg" />
+         </image>
+      </ImageView>
+      <Label id="lblPortal" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" prefHeight="70.0" prefWidth="475.0" text=" HSE Vaccination Portal" textFill="#dddbdb" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker id="dteAppDate" layoutX="241.0" layoutY="306.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblDateofCancel" layoutX="65.0" layoutY="300.0" prefHeight="30.0" prefWidth="177.0" text="Date of Cancellation:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker id="dteAppDate" layoutX="241.0" layoutY="240.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblAppDate" layoutX="82.0" layoutY="240.0" prefHeight="30.0" prefWidth="160.0" text="Appointment Date:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label id="lblReason" layoutX="35.0" layoutY="360.0" prefHeight="30.0" prefWidth="200.0" text="Reason for Cancellation:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtReason" fx:id="txtFname" layoutX="241.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button id="btnBack" fx:id="btnBack2" layoutX="60.0" layoutY="515.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <Button id="btnCancel" fx:id="btnBook" layoutX="350.0" layoutY="515.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb" />
+   </children>
+</AnchorPane>

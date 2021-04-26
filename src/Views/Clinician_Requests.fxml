@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="835.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianVacRequestsController">
+    <children>
+        <Label fx:id="label" layoutX="221.0" layoutY="62.0" minHeight="16" minWidth="69" prefHeight="47.0" prefWidth="395.0" text="Vaccination Requests" textFill="#dddbdb">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></Label>
+      <ImageView fitHeight="142.0" fitWidth="175.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="http://www.hse.ie/images/hse.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="284.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnCreateRequests" layoutX="675.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Create" textFill="#dddbdb" />
+      <Button fx:id="btnUpdateRequests" layoutX="675.0" layoutY="274.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Update" textFill="#dddbdb" />
+      <Button fx:id="btnDeleteRequests" layoutX="675.0" layoutY="328.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Delete" textFill="#dddbdb" />
+      <Button fx:id="btnBackRequests" layoutX="47.0" layoutY="610.0" mnemonicParsing="false" onAction="#BackToHomepage" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <Label layoutX="71.0" layoutY="552.0" text="Patient Email" textFill="#dddbdb" />
+      <Label layoutX="69.0" layoutY="208.0" prefHeight="27.0" prefWidth="116.0" text="Patient Name" textFill="#dddbdb" />
+      <Label layoutX="67.0" layoutY="332.0" prefHeight="27.0" prefWidth="146.0" text="Patient Address" textFill="#dddbdb" />
+      <Label layoutX="64.0" layoutY="386.0" text="Patient GP Address" textFill="#dddbdb" />
+      <Label layoutX="65.0" layoutY="442.0" text="Patient Gender " textFill="#dddbdb" />
+      <Label layoutX="64.0" layoutY="495.0" text="Patient Phone Number" textFill="#dddbdb" />
+      <Label layoutX="69.0" layoutY="271.0" prefHeight="27.0" prefWidth="116.0" text="Patient D.O.B" textFill="#dddbdb" />
+      <TextField fx:id="txtPatientNameRequests" layoutX="253.0" layoutY="202.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="txtPatientDOBRequests" layoutX="253.0" layoutY="265.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="txtPatientAddressRequests" layoutX="254.0" layoutY="326.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="PatientGPAddressRequests" layoutX="254.0" layoutY="380.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="txtPatientGenderRequests" layoutX="254.0" layoutY="436.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="txtPatientPhoneNumberRequests" layoutX="253.0" layoutY="489.0" prefHeight="39.0" prefWidth="383.0" />
+      <TextField fx:id="txtPatientEmail" layoutX="254.0" layoutY="546.0" prefHeight="39.0" prefWidth="383.0" />
+    </children>
+</AnchorPane>

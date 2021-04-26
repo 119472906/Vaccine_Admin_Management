@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="771.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianTasksController">
+    <children>
+        <Label fx:id="label" layoutX="266.0" layoutY="81.0" minHeight="16" minWidth="69" text="Vaccination Tasks" textFill="#dddbdb">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://www.hse.ie/images/hse.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="cbConsentTasks" layoutX="679.0" layoutY="245.0" mnemonicParsing="false" onAction="#ConfirmTasks" />
+      <Label layoutX="43.0" layoutY="245.0" text="Recieve Consent from Patient to Administer the Vaccine to them" textFill="#dddbdb" />
+      <Label layoutX="44.0" layoutY="283.0" text="Explain to Patients Risks and Possible Side Effects of the Vaccine" textFill="#dddbdb" />
+      <Label layoutX="44.0" layoutY="329.0" text="Ask Patient if they have any Allergies or Underlying Medical Conditions" textFill="#dddbdb" />
+      <CheckBox fx:id="cbSideEffectsTasks" layoutX="679.0" layoutY="283.0" mnemonicParsing="false" onAction="#ConfirmTasks" />
+      <CheckBox fx:id="cbAdministerTasks" layoutX="679.0" layoutY="374.0" mnemonicParsing="false" onAction="#ConfirmTasks" />
+      <CheckBox fx:id="cbWaitTasks" layoutX="679.0" layoutY="415.0" mnemonicParsing="false" onAction="#ConfirmTasks" />
+      <CheckBox fx:id="cbAllergiesTasks" layoutX="679.0" layoutY="329.0" mnemonicParsing="false" onAction="#ConfirmTasks" />
+      <Label layoutX="44.0" layoutY="374.0" text="Adminster Vaccine to Patient" textFill="#dddbdb" />
+      <Label layoutX="44.0" layoutY="415.0" text="Wait 15 minutes to make sure the Patient is not Suffering from any Side Effects" textFill="#dddbdb" />
+      <Button fx:id="btnBackTasks" layoutX="43.0" layoutY="472.0" mnemonicParsing="false" onAction="#backToMain" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <Button fx:id="btnConfirmTasks" layoutX="668.0" layoutY="472.0" mnemonicParsing="false" onAction="#ConfirmTasks" style="-fx-background-color: e45652;" text="Confirm" textFill="#dddbdb" />
+      <Text fill="#dddbdb" layoutX="266.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure you have completed all the below tasks before Administering the Vaccine" wrappingWidth="325.6103515625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

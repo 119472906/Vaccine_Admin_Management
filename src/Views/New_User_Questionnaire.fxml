@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1015.0" prefWidth="1019.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewUserQuestController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="115.0" layoutX="29.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../GUI%20II/src/gui/ii/HSE%20logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="177.0" layoutY="35.0" text="HSE Vaccination Questionnaire" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="177.0">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="109.0" text="PATIENT NAME" textFill="#dddbdb" AnchorPane.leftAnchor="40.0" />
+      <TextField id="txtPatient" fx:id="txtName" layoutX="177.0" layoutY="104.0" prefHeight="31.0" prefWidth="344.0" AnchorPane.leftAnchor="177.0" />
+      <Label layoutX="537.0" layoutY="109.0" text="TODAYS DATE" textFill="#dddbdb" />
+      <Label layoutX="40.0" layoutY="157.0" text="PATIENT DOB" textFill="#dddbdb" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="33.0" layoutY="356.0" text="Q1. Are you in good health?" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="39.0" layoutY="405.0" text="Q2. When was your last physical examnination?" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="39.0" layoutY="451.0" text="Q3 P2. What was the result?" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" />
+      <TextField id="txtResult" fx:id="txtPE" layoutX="500.0" layoutY="397.0" prefHeight="43.0" prefWidth="338.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="180.0" />
+      <Label layoutX="40.0" layoutY="498.0" text="Q4. Are you presently being treated by a physiscian?" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" />
+      <Label layoutX="34.0" layoutY="541.0" text="Q5. List the medications you are taking (perscription and non-perscription, over the counter, vitamins and contraceptives)" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="55.0" />
+      <TextArea id="txtList" fx:id="txtMedications" layoutX="24.0" layoutY="581.0" prefHeight="135.0" prefWidth="829.0" wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="30.0" />
+      <Label layoutX="35.0" layoutY="728.0" text="Q6. Are you allergic to, have had any bad reactions to medication you have taken? ( list the medication and reaction)" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="86.0" />
+      <TextArea id="txtList2" fx:id="txtAllergies" layoutX="35.0" layoutY="765.0" prefHeight="145.0" prefWidth="829.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="30.0" />
+      <Button id="btnEndQuestionaire" fx:id="btnSave" layoutX="789.0" layoutY="921.0" mnemonicParsing="false" onAction="#SaveNextScene" prefHeight="69.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Save" textFill="#dddbdb" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="789.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="921.0" />
+      <TextField id="txtTodaysDate" fx:id="txtDate" layoutX="640.0" layoutY="104.0" prefHeight="31.0" prefWidth="338.0" promptText="Example: 02/11/2021" AnchorPane.rightAnchor="30.0" />
+      <TextField id="txtPDOB" fx:id="txtDOB" layoutX="177.0" layoutY="152.0" promptText="Example: 02/11/2021" AnchorPane.leftAnchor="177.0" />
+      <TextField id="txtLast" fx:id="txtResult" layoutX="302.0" layoutY="445.0" prefHeight="39.0" prefWidth="338.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="180.0" />
+      <TextArea id="txtInformation" editable="false" layoutX="33.0" layoutY="206.0" prefHeight="135.0" prefWidth="829.0" text="The following information about your health is very important. It allows us to provide you with the safest possible treatment. Incorrect information may be dangerous to your health. Administering vaccinations without full knowledge of a patients past medical history may lead to side effects and complications once the vaccine is administered, please answer all the questions completely and accurately. If you do not understand a question or are unsure of about an answer please contact the HSE vaccination department or your doctor. The information on this questionaire will be viewed by personnel administering vaccinations only and is considered confidential information." wrapText="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="30.0" />
+      <TextField fx:id="txtGH" layoutX="500.0" layoutY="350.0" prefHeight="39.0" prefWidth="338.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="180.0" />
+      <TextField fx:id="txtPhy" layoutX="501.0" layoutY="493.0" prefHeight="39.0" prefWidth="338.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="180.0" />
+      <Button fx:id="btnBacktoHome" layoutX="43.0" layoutY="921.0" mnemonicParsing="false" onAction="#backtohome" prefHeight="69.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="776.0" />
+   </children>
+</AnchorPane>

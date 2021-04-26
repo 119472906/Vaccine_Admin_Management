@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="796.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RequestVaccineController">
+   <children>
+      <Label layoutX="232.0" layoutY="6.0" text="Request Individual Vaccine" textFill="#dddbdb">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="13.0" layoutY="192.0" text="Request Vaccine for Centre" textFill="#dddbdb">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="fullNameTextField" layoutX="13.0" layoutY="50.0" promptText="Full Name" />
+      <TextField fx:id="AddressTextField" layoutX="206.0" layoutY="50.0" prefHeight="31.0" prefWidth="347.0" promptText="Address" />
+      <TextField fx:id="CountyTextField" layoutX="556.0" layoutY="50.0" prefHeight="31.0" prefWidth="217.0" promptText="County" />
+      <Button layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#sendRequestButtonPushed" style="-fx-background-color: e45652;" text="Send Request" textFill="#dad6d6" />
+      <Label fx:id="individualOrderLabel" layoutX="14.0" layoutY="140.0" />
+      <Button fx:id="btnBack" layoutX="649.0" layoutY="341.0" mnemonicParsing="false" onAction="#BackToMenu" style="-fx-background-color: e45652;" text="Return to Menu" textFill="#dad6d6" />
+      <ChoiceBox fx:id="massOrderChoiceBox" layoutX="10.0" layoutY="229.0" prefHeight="25.0" prefWidth="431.0" />
+      <Button layoutX="14.0" layoutY="279.0" mnemonicParsing="false" onAction="#massRequestButtonPushed" style="-fx-background-color: e45652;" text="Send Request" textFill="#dad6d6" />
+      <Label fx:id="massOrderLabel" layoutX="14.0" layoutY="315.0" />
+      <ImageView fitHeight="237.0" fitWidth="279.0" layoutX="514.0" layoutY="93.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../login_page_2.images/hse-social-facebook.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.VaccineGroupsController">
+   <children>
+      <Label layoutX="21.0" layoutY="14.0" text="Vaccination Progress in Ireland " textFill="#dad6d6">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="90.0" text="First Doses Administered:" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="175.0" text="Second Doses Administered:" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="266.0" text="Total Vaccines Administered:" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="279.0" layoutY="90.0" text="495,824" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="279.0" layoutY="175.0" text="184,191" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="279.0" layoutY="266.0" text="680,015" textFill="#dad6d6">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button layoutX="479.0" layoutY="338.0" mnemonicParsing="false" onAction="#ReturnToMenuButtonPushed" style="-fx-background-color: e45652;" text="Return to Menu" textFill="#dad6d6" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserViewAppController">
+   <children>
+      <Label id="lblPortal" alignment="CENTER" layoutX="120.0" prefHeight="70.0" prefWidth="475.0" text=" HSE Vaccination Portal" textFill="#dddbdb" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView id="imgHse" fitHeight="68.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/BIS/Java/hse-ireland.jpg" />
+         </image>
+      </ImageView>
+      <Button id="btnBookApp" fx:id="btnBookApp" layoutY="70.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#Movetoappointment" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnCancelApp" fx:id="btnCancelApp" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetocancellation" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnView" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="View Timeslots" textFill="#dddbdb">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnViewApp" fx:id="btnBook" layoutX="185.0" layoutY="242.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="View Appointment" textFill="#dddbdb" />
+      <TextField id="txtAppointment" layoutX="185.0" layoutY="350.0" prefHeight="31.0" prefWidth="230.0" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="185.0" layoutY="432.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Apane" prefHeight="560.0" prefWidth="800.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminMenuController">
+   <children>
+      <Label layoutX="52.0" layoutY="14.0" text="Healthcare Provider Administration" textFill="#dddbdb" underline="true">
+         <font>
+            <Font size="45.0" />
+         </font></Label>
+      <Button fx:id="btnVacInfo" layoutX="100.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacInfo" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Vaccine &#10;Information" textAlignment="CENTER" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnVacCentres" layoutX="325.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacCentres" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Vaccination &#10;Centres" textAlignment="CENTER" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnRequestVac" layoutX="550.0" layoutY="280.0" mnemonicParsing="false" onAction="#RequestVac" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Request Vaccines" textFill="#dad6d6" AnchorPane.rightAnchor="100.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnAddFea" layoutX="214.0" layoutY="408.0" mnemonicParsing="false" onAction="#AddFeat" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Additional &#10;Features" textAlignment="CENTER" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="439.0" layoutY="408.0" mnemonicParsing="false" onAction="#BackToLogin" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Back" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="297.0" layoutY="187.0" text="Main Menu" textFill="#dddbdb" underline="true">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="167.0" fitWidth="170.0" layoutX="83.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../login_page_2.images/hse-social-facebook.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="167.0" fitWidth="170.0" layoutX="550.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="83.26507568359375">
+         <image>
+            <Image url="@../login_page_2.images/hse-social-facebook.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="296.0" layoutX="253.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../login_page_2.images/hse_logo_mission_full-colour_irish_first_fa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

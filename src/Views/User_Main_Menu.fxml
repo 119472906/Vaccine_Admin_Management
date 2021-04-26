@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserMainMenuController">
+   <children>
+      <Label id="lblPortal" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" prefHeight="70.0" prefWidth="475.0" text=" HSE Vaccination Portal" textFill="#dddbdb" underline="true" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView id="imgHse" fitHeight="68.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="424.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../Desktop/BIS/Java/hse-ireland.jpg" />
+         </image>
+      </ImageView>
+      <Button id="btnBookApp" fx:id="btnBookApp" layoutY="70.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#Movetoappointment" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnCancelApp" fx:id="btnCancelApp" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetocancellation" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Button id="btnView" fx:id="btnView" layoutX="399.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetoview" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="View Timeslots" textFill="#dddbdb" AnchorPane.rightAnchor="2.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+         </font>
+      </Button>
+      <Label id="lblAbout" alignment="CENTER" contentDisplay="CENTER" layoutY="210.0" prefHeight="20.0" prefWidth="600.0" text="About COVID - 19" textFill="#dddbdb" underline="true">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="16.0" />
+         </font>
+      </Label>
+      <TextArea id="txtCOVID" layoutX="10.0" layoutY="255.0" mouseTransparent="true" prefColumnCount="20" prefHeight="267.0" prefRowCount="20" prefWidth="580.0" text="COVID-19 (coronavirus) is a highly infectious disease that can cause serious illness,&#10;hospitalisation and even death.&#10;COVID-19 vaccines offer protection from COVID-19. If you do catch COVID-19 &#10;after vaccination, you should be protected from the serious illness the virus causes.&#10;Getting vaccinated against COVID-19 is not mandatory but we strongly&#10;recommend that you get your vaccine when it's offered to you.&#10;There's no charge for getting your COVID-19 vaccine. It's free.&#10;You cannot get it privately.&#10;Our aim in offering COVID-19 vaccines to the population is to&#10;protect people and reducethe illness and deaths caused by this virus.&#10;&#10;" />
+      <Hyperlink id="hypHSE" layoutX="244.0" layoutY="525.0" prefHeight="29.0" prefWidth="186.0" text="https://www2.hse.ie/covid-19-vaccine/" />
+      <Label id="lblVisit" layoutX="92.0" layoutY="529.0" prefHeight="21.0" prefWidth="158.0" text="To find out more visit:" textFill="#dddbdb" />
+      <Button fx:id="btnBacktoLogin" layoutX="14.0" layoutY="554.0" mnemonicParsing="false" onAction="#backToLogin" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+   </children>
+</AnchorPane>

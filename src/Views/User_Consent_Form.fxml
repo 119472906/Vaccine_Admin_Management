@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserConsentFormController">
+   <children>
+      <Label fx:id="formLabel" layoutX="15.0" layoutY="6.0" text="User Consent Form" textFill="#dad6d6">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <TextField fx:id="nameTextField" layoutX="14.0" layoutY="55.0" prefHeight="25.0" prefWidth="174.0" promptText="Full Name" />
+      <DatePicker fx:id="dobDatePicker" layoutX="14.0" layoutY="109.0" promptText="Date of Birth" />
+      <Button layoutX="479.0" layoutY="333.0" mnemonicParsing="false" onAction="#ReturnToMenuButtonPushed" style="-fx-background-color: e45652;" text="Return to Menu" textFill="#dad6d6" />
+      <TextField fx:id="allergyHistoryTextField" layoutX="14.0" layoutY="167.0" prefHeight="25.0" prefWidth="174.0" promptText="Allergy History" />
+      <TextField fx:id="contactNumberTextField" layoutX="14.0" layoutY="229.0" prefHeight="25.0" prefWidth="174.0" promptText="Contact Number" />
+      <Button fx:id="consentButton" layoutX="14.0" layoutY="286.0" mnemonicParsing="false" onAction="#consentButtonPushed" style="-fx-background-color: e45652;" text="Confirm Consent" textFill="#dad6d6" />
+      <Label fx:id="consentLabel" layoutX="382.0" layoutY="59.0" />
+   </children>
+</AnchorPane>

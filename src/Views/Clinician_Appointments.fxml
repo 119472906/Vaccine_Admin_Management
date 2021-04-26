@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="795.0" prefWidth="1154.0" style="-fx-background-image: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianAppointmentsController">
+   <top>
+      <VBox prefHeight="593.0" prefWidth="1154.0" style="-fx-background-color: #0A544A;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #0A544A;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/HSE-Logo-300x175.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Appointments" textAlignment="CENTER" textFill="#dddbdb" underline="true">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="92.0" prefWidth="1108.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #0A544A;">
+               <children>
+                  <Button fx:id="btnBacktoHome" mnemonicParsing="false" onAction="#backtohome" style="-fx-background-color: e45652;" text="Back to Homepage" textFill="#dddbdb">
+                     <HBox.margin>
+                        <Insets right="18.0" top="20.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <VBox spacing="10.0" style="-fx-background-color: #0A544A;">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #0A544A;">
+                     <children>
+                        <VBox prefHeight="394.0" prefWidth="422.0">
+                           <children>
+                              <Label prefHeight="69.0" prefWidth="189.0" text="Appointment Status: " textFill="#dddbdb" />
+                              <Label fx:id="lblFname" prefHeight="27.0" prefWidth="193.0" text="First Name:" textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="lblLname" text="Last Name:" textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Clinic:   " textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Location: " textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Date of Booking:" textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="200.0" top="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="394.0" prefWidth="419.0" spacing="30.0">
+                           <children>
+                              <TextField fx:id="txtStatus" promptText="Status">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txtFname">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txtLname" prefHeight="39.0" prefWidth="0.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TextField>
+                              <TextField fx:id="txtClinic" promptText="Example: St. Andrews" />
+                              <TextField fx:id="txtLocation" promptText="Example: Douglas Street" />
+                              <TextField fx:id="txtDateOfBooking" />
+                           </children>
+                           <HBox.margin>
+                              <Insets top="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="246.0" prefWidth="0.0">
+                           <HBox.margin>
+                              <Insets left="500.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnDisplay" mnemonicParsing="false" onAction="#displayData" style="-fx-background-color: e45652;" text="Display" textFill="#dddbdb">
+                           <HBox.margin>
+                              <Insets left="800.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="188.0" prefWidth="1154.0" style="-fx-background-color: #0A544A;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdditionalFeaturesController">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="Additional Features" textFill="#dad6d6">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Button layoutX="48.0" layoutY="168.0" mnemonicParsing="false" onAction="#UserConsentFormButtonPushed" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: e45652;" text="User Consent &#10;Form" textAlignment="CENTER" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="399.0" layoutY="168.0" mnemonicParsing="false" onAction="#VaccineProgressButtonPushed" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: e45652;" text="Vaccine Progress" textFill="#dad6d6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
