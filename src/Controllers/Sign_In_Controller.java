@@ -65,6 +65,26 @@ public class Sign_In_Controller implements Initializable {
         }
     }
     
+    //need to added database
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public void goBack() throws Exception {
             Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
             Stage window = (Stage) btnBack.getScene().getWindow();
@@ -85,26 +105,29 @@ public class Sign_In_Controller implements Initializable {
         window.setScene(new Scene(root));
     }
     
-    @FXML
-    public void backFUP() throws Exception {
-        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
-        Stage window = (Stage) btnFUP.getScene().getWindow();
-        window.setScene(new Scene(root));
-    }
+
     
-    @FXML
-    public void backFAP() throws Exception {
-        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
-        Stage window = (Stage) btnFAP.getScene().getWindow();
-        window.setScene(new Scene(root));
-    }
-    
-    @FXML
-    public void backFCP() throws Exception {
-        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
-        Stage window = (Stage) btnFCP.getScene().getWindow();
-        window.setScene(new Scene(root));
-    }
+//    
+//    @FXML
+//    public void backFUP() throws Exception {
+//        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
+//        Stage window = (Stage) btnFUP.getScene().getWindow();
+//        window.setScene(new Scene(root));
+//    }
+//    
+//    @FXML
+//    public void backFAP() throws Exception {
+//        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
+//        Stage window = (Stage) btnFAP.getScene().getWindow();
+//        window.setScene(new Scene(root));
+//    }
+//    
+//    @FXML
+//    public void backFCP() throws Exception {
+//        Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
+//        Stage window = (Stage) btnFCP.getScene().getWindow();
+//        window.setScene(new Scene(root));
+//    }
     
     
     @Override
