@@ -12,6 +12,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import java.sql.*;
+
 
 public class Sign_In_Controller implements Initializable {
     
@@ -26,65 +28,64 @@ public class Sign_In_Controller implements Initializable {
     @FXML
     private PasswordField txtPassword;
     
+    
+    
     @FXML
     private void userLogin() throws Exception {
-        if(txtEmail.getText().equals("user") && txtPassword.getText().equals("123")) {
-            
-            lblError.setText("Success!");
-            
-            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_Main_Menu.fxml"));
-            Stage window = (Stage) btnSignIn.getScene().getWindow();
-            window.setScene(new Scene(root));  
-        }
         
-        else if (txtEmail.getText().equals("admin") && txtPassword.getText().equals("123")) {
-         
-            lblError.setText("Success!");
-            
-            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Admin_Menu.fxml"));
-            Stage window = (Stage) btnSignIn.getScene().getWindow();
-            window.setScene(new Scene(root));  
-        }
+    //ULDB = User login Database
+    final String ULDB_URL = "jdbc:derby://localhost:1527/UserLoginDB";
         
-        else if (txtEmail.getText().equals("clinician") && txtPassword.getText().equals("123")) {
-            
-            lblError.setText("Success!");
-            
-            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Clinician_Home_Page.fxml"));
-            Stage window = (Stage) btnSignIn.getScene().getWindow();
-            window.setScene(new Scene(root));  
-        }
-
-        else if(txtEmail.getText().isEmpty() && txtPassword.getText().isEmpty()) {
-            lblError.setText("Please enter your data.");
-        }
-
-
-        else {
-            lblError.setText("Wrong username or password!");
+        //Create new database
+   
+    try{
+   Connection userLoginConn = DriverManager.getConnection(ULDB_URL, "paddy", "pass");
+   System.out.println("Connection to UserLoginDB created.");
+   
+    userLoginConn.close();
+    System.out.println("Connection closed.");
+    }catch(Exception ex){
+        System.out.println("ERROR: " + ex.getMessage());
         }
     }
-    
-    //need to added database
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+//        if(txtEmail.getText().equals("user") && txtPassword.getText().equals("123")) {
+//            
+//            lblError.setText("Success!");
+//            
+//            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_Main_Menu.fxml"));
+//            Stage window = (Stage) btnSignIn.getScene().getWindow();
+//            window.setScene(new Scene(root));  
+//        }
+//        
+//        else if (txtEmail.getText().equals("admin") && txtPassword.getText().equals("123")) {
+//         
+//            lblError.setText("Success!");
+//            
+//            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Admin_Menu.fxml"));
+//            Stage window = (Stage) btnSignIn.getScene().getWindow();
+//            window.setScene(new Scene(root));  
+//        }
+//        
+//        else if (txtEmail.getText().equals("clinician") && txtPassword.getText().equals("123")) {
+//            
+//            lblError.setText("Success!");
+//            
+//            Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Clinician_Home_Page.fxml"));
+//            Stage window = (Stage) btnSignIn.getScene().getWindow();
+//            window.setScene(new Scene(root));  
+//        }
+//
+//        else if(txtEmail.getText().isEmpty() && txtPassword.getText().isEmpty()) {
+//            lblError.setText("Please enter your data.");
+//        }
+//
+//
+//        else {
+//            lblError.setText("Wrong username or password!");
+//        }
+//    }
+
     public void goBack() throws Exception {
             Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
             Stage window = (Stage) btnBack.getScene().getWindow();
@@ -104,9 +105,7 @@ public class Sign_In_Controller implements Initializable {
         Stage window = (Stage) hypForgotPass.getScene().getWindow();
         window.setScene(new Scene(root));
     }
-    
 
-    
 //    
 //    @FXML
 //    public void backFUP() throws Exception {
