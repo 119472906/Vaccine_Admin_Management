@@ -35,8 +35,13 @@
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
          </font>
       </Button>
-      <Button id="btnViewApp" fx:id="btnBook" layoutX="185.0" layoutY="242.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="View Appointment" textFill="#dddbdb" />
-      <TextField id="txtAppointment" layoutX="185.0" layoutY="350.0" prefHeight="31.0" prefWidth="230.0" />
-      <Button id="btnBack" fx:id="btnBack" layoutX="185.0" layoutY="432.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <Button id="btnViewApp" fx:id="btnBook" layoutX="270.0" layoutY="247.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="View Appointment Details" textFill="#dddbdb" />
+      <TextField id="txtAppointment" layoutX="270.0" layoutY="200.0" prefHeight="31.0" prefWidth="230.0" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="185.0" layoutY="534.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <Label layoutX="65.0" layoutY="200.0" text="Enter Appointment ID:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

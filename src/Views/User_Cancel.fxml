@@ -35,25 +35,31 @@
             <Font name="Georgia Bold" size="18.0" />
          </font>
       </Label>
-      <DatePicker id="dteAppDate" layoutX="241.0" layoutY="306.0" prefHeight="30.0" prefWidth="300.0" />
+      <DatePicker id="dteAppDate" layoutX="270.0" layoutY="300.0" prefHeight="30.0" prefWidth="300.0" />
       <Label id="lblDateofCancel" layoutX="65.0" layoutY="300.0" prefHeight="30.0" prefWidth="177.0" text="Date of Cancellation:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <DatePicker id="dteAppDate" layoutX="241.0" layoutY="240.0" prefHeight="30.0" prefWidth="300.0" />
-      <Label id="lblAppDate" layoutX="82.0" layoutY="240.0" prefHeight="30.0" prefWidth="160.0" text="Appointment Date:" textFill="#dddbdb">
+      <DatePicker id="dteAppDate" layoutX="270.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblAppDate" layoutX="65.0" layoutY="250.0" prefHeight="30.0" prefWidth="160.0" text="Appointment Date:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Label id="lblReason" layoutX="35.0" layoutY="360.0" prefHeight="30.0" prefWidth="200.0" text="Reason for Cancellation:" textFill="#dddbdb">
+      <Label id="lblReason" layoutX="65.0" layoutY="350.0" prefHeight="30.0" prefWidth="200.0" text="Reason for Cancellation:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <TextField id="txtReason" fx:id="txtFname" layoutX="241.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField id="txtReason" fx:id="txtFname" layoutX="270.0" layoutY="350.0" prefHeight="30.0" prefWidth="300.0" />
       <Button id="btnBack" fx:id="btnBack2" layoutX="60.0" layoutY="515.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
       <Button id="btnCancel" fx:id="btnBook" layoutX="350.0" layoutY="515.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb" />
+      <Label id="lblAppDate" layoutX="65.0" layoutY="200.0" prefHeight="30.0" prefWidth="160.0" text="Appointment ID:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtReason" fx:id="txtFname1" layoutX="270.0" layoutY="200.0" prefHeight="30.0" prefWidth="300.0" />
    </children>
 </AnchorPane>

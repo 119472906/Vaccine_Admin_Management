@@ -10,26 +10,26 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserBookingController">
    <children>
-      <Label id="lblLname" layoutX="122.0" layoutY="240.0" prefHeight="30.0" prefWidth="120.0" text="Last Name:" textFill="#dddbdb">
+      <Label id="lblLname" layoutX="65.0" layoutY="300.0" prefHeight="30.0" prefWidth="120.0" text="Last Name:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Label id="lblLocation" layoutX="122.0" layoutY="300.0" prefHeight="30.0" prefWidth="120.0" text="Location:" textFill="#dddbdb">
+      <Label id="lblLocation" layoutX="65.0" layoutY="350.0" prefHeight="30.0" prefWidth="120.0" text="Location:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Label id="lblDate" layoutX="100.0" layoutY="410.0" prefHeight="30.0" prefWidth="142.0" text="Date of Booking:" textFill="#dddbdb">
+      <Label id="lblDate" layoutX="65.0" layoutY="450.0" prefHeight="30.0" prefWidth="142.0" text="Date of Booking:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <TextField id="txtLname" layoutX="242.0" layoutY="240.0" prefHeight="30.0" prefWidth="300.0" />
-      <TextField id="txtLocation" layoutX="242.0" layoutY="310.0" prefHeight="30.0" prefWidth="300.0" />
-      <Button id="btnBook" fx:id="btnBook" layoutX="350.0" layoutY="515.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb" />
-      <Button id="btnBack" fx:id="btnBack" layoutX="60.0" layoutY="515.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
-      <DatePicker id="dteDate" layoutX="242.0" layoutY="410.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField id="txtLname" layoutX="270.0" layoutY="300.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField id="txtLocation" layoutX="270.0" layoutY="350.0" prefHeight="30.0" prefWidth="300.0" />
+      <Button id="btnBook" fx:id="btnBook" layoutX="350.0" layoutY="550.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="60.0" layoutY="550.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
+      <DatePicker id="dteDate" layoutX="270.0" layoutY="450.0" prefHeight="30.0" prefWidth="300.0" />
       <Button id="btnView" fx:id="btnView" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetoview" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="View Timeslots" textFill="#dddbdb">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="15.0" />
@@ -55,23 +55,29 @@
             <Font name="Georgia Bold" size="18.0" />
          </font>
       </Label>
-      <TextField id="txtFname" fx:id="txtFname" layoutX="242.0" layoutY="182.0" prefHeight="30.0" prefWidth="300.0" />
-      <Label id="lblFname" layoutX="122.0" layoutY="180.0" prefHeight="30.0" prefWidth="120.0" text="First Name:" textFill="#dddbdb">
+      <TextField id="txtFname" fx:id="txtFname" layoutX="270.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblFname" layoutX="65.0" layoutY="250.0" prefHeight="30.0" prefWidth="120.0" text="First Name:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <TextField id="txtClinic" layoutX="242.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" />
-      <Label id="lblClinic" layoutX="122.0" layoutY="350.0" prefHeight="30.0" prefWidth="120.0" text="Clinic:" textFill="#dddbdb">
+      <TextField id="txtClinic" layoutX="270.0" layoutY="400.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblClinic" layoutX="65.0" layoutY="400.0" prefHeight="30.0" prefWidth="120.0" text="Clinic:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Label id="lblApp" layoutX="67.0" layoutY="470.0" prefHeight="30.0" prefWidth="175.0" text="Appointment Status:" textFill="#dddbdb">
+      <Label id="lblApp" layoutX="65.0" layoutY="500.0" prefHeight="30.0" prefWidth="175.0" text="Appointment Status:" textFill="#dddbdb">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <TextField id="txtApp" layoutX="242.0" layoutY="470.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField id="txtApp" layoutX="270.0" layoutY="500.0" prefHeight="30.0" prefWidth="300.0" />
+      <TextField id="txtFname" fx:id="txtFname1" layoutX="270.0" layoutY="200.0" prefHeight="30.0" prefWidth="300.0" />
+      <Label id="lblFname" layoutX="65.0" layoutY="200.0" prefHeight="30.0" prefWidth="142.0" text="Appointment ID:" textFill="#dddbdb">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

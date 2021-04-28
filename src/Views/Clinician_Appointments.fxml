@@ -49,30 +49,34 @@
                      <children>
                         <VBox prefHeight="394.0" prefWidth="422.0">
                            <children>
-                              <Label prefHeight="69.0" prefWidth="189.0" text="Appointment Status: " textFill="#dddbdb" />
-                              <Label fx:id="lblFname" prefHeight="27.0" prefWidth="193.0" text="First Name:" textFill="#dddbdb">
+                              <Label text="Appointment ID" textFill="#dddbdb" />
+                              <Label text="Appointment Status: " textFill="#dddbdb">
                                  <VBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets top="40.0" />
+                                 </VBox.margin></Label>
+                              <Label fx:id="lblFname" text="First Name:" textFill="#dddbdb">
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
                                  </VBox.margin>
                               </Label>
                               <Label fx:id="lblLname" text="Last Name:" textFill="#dddbdb">
                                  <VBox.margin>
-                                    <Insets top="30.0" />
+                                    <Insets top="40.0" />
                                  </VBox.margin>
                               </Label>
                               <Label text="Clinic:   " textFill="#dddbdb">
                                  <VBox.margin>
-                                    <Insets top="50.0" />
+                                    <Insets top="40.0" />
                                  </VBox.margin>
                               </Label>
                               <Label text="Location: " textFill="#dddbdb">
                                  <VBox.margin>
-                                    <Insets top="50.0" />
+                                    <Insets top="40.0" />
                                  </VBox.margin>
                               </Label>
                               <Label text="Date of Booking:" textFill="#dddbdb">
                                  <VBox.margin>
-                                    <Insets top="50.0" />
+                                    <Insets top="40.0" />
                                  </VBox.margin>
                               </Label>
                            </children>
@@ -82,24 +86,25 @@
                         </VBox>
                         <VBox prefHeight="394.0" prefWidth="419.0" spacing="30.0">
                            <children>
-                              <TextField fx:id="txtStatus" promptText="Status">
+                              <TextField />
+                              <TextField fx:id="txtStatus">
                                  <VBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets />
                                  </VBox.margin>
                               </TextField>
                               <TextField fx:id="txtFname">
                                  <VBox.margin>
-                                    <Insets top="10.0" />
+                                    <Insets />
                                  </VBox.margin>
                               </TextField>
-                              <TextField fx:id="txtLname" prefHeight="39.0" prefWidth="0.0">
+                              <TextField fx:id="txtLname">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
                               </TextField>
                               <TextField fx:id="txtClinic" promptText="Example: St. Andrews" />
                               <TextField fx:id="txtLocation" promptText="Example: Douglas Street" />
-                              <TextField fx:id="txtDateOfBooking" />
+                              <DatePicker prefHeight="25.0" prefWidth="226.0" />
                            </children>
                            <HBox.margin>
                               <Insets top="50.0" />
