@@ -35,19 +35,35 @@ public class Sign_In_Controller implements Initializable {
         
     //ULDB = User login Database
     final String ULDB_URL = "jdbc:derby://localhost:1527/UserLoginDB";
-        
         //Create new database
-   
     try{
    Connection userLoginConn = DriverManager.getConnection(ULDB_URL, "paddy", "pass");
    System.out.println("Connection to UserLoginDB created.");
-   
-    userLoginConn.close();
-    System.out.println("Connection closed.");
-    }catch(Exception ex){
-        System.out.println("ERROR: " + ex.getMessage());
+        Statement stmt = userLoginConn.createStatement();
+        String sqlStatement = "SELECT username FROM users";
+        ResultSet result = stmt.executeQuery(sqlStatement);
+        
+        while (result.next())
+        {
+            System.out.println(result.getString(1));
+            
+            if (txtEmail.getText().toLowerCase().equals(result.getString(1))) {
+                    Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_Main_Menu.fxml"));
+                    Stage window = (Stage) btnSignIn.getScene().getWindow();
+                    window.setScene(new Scene(root));  
+            }else if(txtEmail.getText().isEmpty() && txtPassword.getText().isEmpty()) {
+                    lblError.setText("Please enter your data.");
+            }else{
+                    lblError.setText("Wrong username or password!");
+            }
+        }        
+            userLoginConn.close();
+            System.out.println("Connection closed.");
+        }catch(Exception ex){
+            System.out.println("ERROR: " + ex.getMessage());
         }
     }
+
         
 //        if(txtEmail.getText().equals("user") && txtPassword.getText().equals("123")) {
 //            
@@ -106,6 +122,13 @@ public class Sign_In_Controller implements Initializable {
         window.setScene(new Scene(root));
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+    
+}
+
 //    
 //    @FXML
 //    public void backFUP() throws Exception {
@@ -127,11 +150,3 @@ public class Sign_In_Controller implements Initializable {
 //        Stage window = (Stage) btnFCP.getScene().getWindow();
 //        window.setScene(new Scene(root));
 //    }
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
-}
