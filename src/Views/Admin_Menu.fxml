@@ -15,23 +15,23 @@
          <font>
             <Font size="45.0" />
          </font></Label>
-      <Button fx:id="btnVacInfo" layoutX="100.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacInfo" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Vaccine &#10;Information" textAlignment="CENTER" textFill="#dad6d6">
+      <Button fx:id="btnVacInfo" layoutX="100.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacInfo" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652; -fx-background-radius: 15;" text="Vaccine &#10;Information" textAlignment="CENTER" textFill="#dad6d6">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnVacCentres" layoutX="325.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacCentres" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Vaccination &#10;Centres" textAlignment="CENTER" textFill="#dad6d6">
+      <Button fx:id="btnVacCentres" layoutX="325.0" layoutY="280.0" mnemonicParsing="false" onAction="#VacCentres" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652; -fx-background-radius: 15;" text="Vaccination &#10;Centres" textAlignment="CENTER" textFill="#dad6d6">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnRequestVac" layoutX="550.0" layoutY="280.0" mnemonicParsing="false" onAction="#RequestVac" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Request Vaccines" textFill="#dad6d6" AnchorPane.rightAnchor="100.0">
+      <Button fx:id="btnRequestVac" layoutX="550.0" layoutY="280.0" mnemonicParsing="false" onAction="#RequestVac" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652; -fx-background-radius: 15;" text="Request Vaccines" textFill="#dad6d6" AnchorPane.rightAnchor="100.0">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnAddFea" layoutX="214.0" layoutY="408.0" mnemonicParsing="false" onAction="#AddFeat" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Additional &#10;Features" textAlignment="CENTER" textFill="#dad6d6">
+      <Button fx:id="btnAddFea" layoutX="214.0" layoutY="408.0" mnemonicParsing="false" onAction="#AddFeat" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652; -fx-background-radius: 15;" text="Additional &#10;Features" textAlignment="CENTER" textFill="#dad6d6">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnBack" layoutX="439.0" layoutY="408.0" mnemonicParsing="false" onAction="#BackToLogin" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652;" text="Back" textFill="#dad6d6">
+      <Button fx:id="btnBack" layoutX="439.0" layoutY="408.0" mnemonicParsing="false" onAction="#BackToLogin" prefHeight="75.0" prefWidth="150.0" style="-fx-background-color: #E45652; -fx-background-radius: 15;" text="Back" textFill="#dad6d6">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>

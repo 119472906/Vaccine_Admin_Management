@@ -9,37 +9,78 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="673.0" prefWidth="835.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianVacRequestsController">
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="800.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianVacRequestsController">
     <children>
-        <Label fx:id="label" layoutX="221.0" layoutY="62.0" minHeight="16" minWidth="69" prefHeight="47.0" prefWidth="395.0" text="Vaccination Requests" textFill="#dddbdb">
+        <Label fx:id="label" layoutX="221.0" layoutY="62.0" minHeight="16" minWidth="69" prefHeight="50.0" prefWidth="330.0" text="Vaccination Requests" textFill="#dddbdb" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
          <font>
-            <Font name="System Bold" size="37.0" />
+            <Font name="Arial Narrow Bold" size="35.0" />
          </font></Label>
-      <ImageView fitHeight="142.0" fitWidth="175.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="http://www.hse.ie/images/hse.jpg" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="284.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="btnCreateRequests" layoutX="675.0" layoutY="216.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Create" textFill="#dddbdb" />
-      <Button fx:id="btnUpdateRequests" layoutX="675.0" layoutY="274.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Update" textFill="#dddbdb" />
-      <Button fx:id="btnDeleteRequests" layoutX="675.0" layoutY="328.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="83.0" style="-fx-background-color: e45652;" text="Delete" textFill="#dddbdb" />
-      <Button fx:id="btnBackRequests" layoutX="47.0" layoutY="610.0" mnemonicParsing="false" onAction="#BackToHomepage" prefHeight="47.0" prefWidth="75.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="530.0" text="Patient Email" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="230.0" prefHeight="27.0" prefWidth="116.0" text="Patient Name" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="330.0" prefHeight="27.0" prefWidth="146.0" text="Patient Address" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="380.0" text="Patient GP Address" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="430.0" text="Patient Gender " textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="480.0" text="Patient Phone Number" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="280.0" prefHeight="27.0" prefWidth="116.0" text="Patient D.O.B" textFill="#dddbdb" />
-      <TextField fx:id="txtPatientNameRequests" layoutX="250.0" layoutY="230.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientDOBRequests" layoutX="250.0" layoutY="280.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientAddressRequests" layoutX="250.0" layoutY="330.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="PatientGPAddressRequests" layoutX="250.0" layoutY="380.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientGenderRequests" layoutX="250.0" layoutY="430.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientPhoneNumberRequests" layoutX="250.0" layoutY="480.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientEmail" layoutX="250.0" layoutY="530.0" prefHeight="27.0" prefWidth="383.0" />
-      <TextField fx:id="txtPatientNameRequests1" layoutX="250.0" layoutY="180.0" prefHeight="27.0" prefWidth="383.0" />
-      <Label layoutX="65.0" layoutY="180.0" prefHeight="27.0" prefWidth="116.0" text="Vaccine ID" textFill="#dddbdb" />
+      <Button fx:id="btnBack" layoutX="47.0" layoutY="610.0" mnemonicParsing="false" onAction="#BackToCLinMenu" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: e45652; -fx-background-radius: 10;" text="Back" textFill="#dddbdb" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="65.0" layoutY="530.0" prefHeight="30.0" text="Patient Email" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="415.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="230.0" prefHeight="30.0" prefWidth="116.0" text="Patient Name" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="145.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="330.0" prefHeight="30.0" prefWidth="146.0" text="Patient Address" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="235.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="380.0" prefHeight="30.0" text="Patient GP Address" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="430.0" prefHeight="30.0" text="Patient Gender " textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="325.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="480.0" prefHeight="30.0" text="Patient Phone Number" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Label layoutX="65.0" layoutY="280.0" prefHeight="30.0" prefWidth="116.0" text="Patient D.O.B" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtPatientNameRequests" layoutX="250.0" layoutY="230.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="145.0" />
+      <TextField fx:id="txtPatientDOBRequests" layoutX="250.0" layoutY="280.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="190.0" />
+      <TextField fx:id="txtPatientAddressRequests" layoutX="250.0" layoutY="330.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="235.0" />
+      <TextField fx:id="PatientGPAddressRequests" layoutX="250.0" layoutY="380.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="280.0" />
+      <TextField fx:id="txtPatientGenderRequests" layoutX="250.0" layoutY="430.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="325.0" />
+      <TextField fx:id="txtPatientPhoneNumberRequests" layoutX="250.0" layoutY="480.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="370.0" />
+      <TextField fx:id="txtPatientEmail" layoutX="250.0" layoutY="530.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="415.0" />
+      <TextField fx:id="txtPatientNameRequests1" layoutX="250.0" layoutY="180.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="65.0" layoutY="180.0" prefHeight="30.0" prefWidth="116.0" text="Vaccine ID" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Label>
+      <Button fx:id="btnDisplay" layoutX="150.0" layoutY="457.0" mnemonicParsing="false" onAction="#displayAppData" prefWidth="100.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="Display" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEdit" layoutX="274.0" layoutY="457.0" mnemonicParsing="false" onAction="#editAppData" prefHeight="44.0" prefWidth="70.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="Edit" textFill="#dddbdb" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="588.0" layoutY="457.0" mnemonicParsing="false" onAction="#DeleteAppData" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="Delete" textFill="#dddbdb" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="484.0" layoutY="457.0" mnemonicParsing="false" onAction="#addAppData" prefWidth="70.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="Add" textFill="#dddbdb" AnchorPane.leftAnchor="465.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="365.0" layoutY="457.0" mnemonicParsing="false" onAction="#saveAppData" prefWidth="70.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="Save" textFill="#dddbdb" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="365.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

@@ -9,60 +9,47 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="657.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianHomePageController">
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="800.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClinicianHomePageController">
    <children>
-      <SplitPane dividerPositions="0.20631067961165048" orientation="VERTICAL" prefHeight="414.0" prefWidth="559.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="470.0">
-               <children>
-                  <AnchorPane />
-                  <HBox layoutX="230.0" prefHeight="80.0" prefWidth="557.0" style="-fx-background-color: #0A544A;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                  <ImageView fitHeight="172.0" fitWidth="119.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="https://www.hmi.ie/wps/wp-content/uploads/2011/03/HSE-Logo-300x175.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="105.0" layoutY="16.0" text="Clinician Appointment Management" textAlignment="CENTER" textFill="#dddbdb" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="40.0">
-                     <font>
-                        <Font name="System Bold" size="36.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-          <AnchorPane prefHeight="353.0" prefWidth="626.0" style="-fx-background-color: #0A544A;">
-               <children>
-                  <VBox layoutX="364.0" layoutY="51.0" spacing="20.0" AnchorPane.topAnchor="55.0">
-                     <children>
-                        <Button fx:id="btnBacktoLogin" mnemonicParsing="false" onAction="#backtoLogin" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: e45652;" text="Home" textFill="#dddbdb" />
-                        <Button fx:id="btnAppointments" mnemonicParsing="false" onAction="#gotoAppointments" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: e45652;" text="Appointments" textFill="#dddbdb" />
-                        <Button fx:id="btnTasks" mnemonicParsing="false" onAction="#gotoTasks" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: e45652;" text="Tasks" textFill="#dddbdb" />
-                        <Button fx:id="btnRequests" mnemonicParsing="false" onAction="#gotoRequests" prefHeight="39.0" prefWidth="143.0" style="-fx-background-color: e45652;" text="Requests" textFill="#dddbdb" />
-                        <Button fx:id="btnQuestionnaire" mnemonicParsing="false" onAction="#gotoQuestionnaire" prefHeight="39.0" prefWidth="146.0" style="-fx-background-color: e45652;" text="Questionnaire" textFill="#dddbdb" />
-                     </children>
-                  </VBox>
-                  <VBox layoutX="11.0" layoutY="67.0" prefHeight="245.0" prefWidth="286.0" AnchorPane.topAnchor="50.0">
-                     <children>
-                        <ImageView fitHeight="356.0" fitWidth="337.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="https://www.limerick.ie/sites/default/files/media/images/2020-03/2020.03.13-covid-19-a3-public-information-poster-english.png" />
-                           </image></ImageView>
-                     </children>
-                  </VBox>
-                  <VBox layoutX="562.0" layoutY="55.0" prefHeight="267.0" prefWidth="239.0" AnchorPane.topAnchor="55.0">
-                     <children>
-                        <VBox prefHeight="200.0" prefWidth="100.0">
-                           <children>
-                              <ImageView fitHeight="320.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="https://www.mdi.ie/wp-content/uploads/2020/03/16.03-covid-19-symptoms-a4-poster-page-001-424x600.jpg" />
-                                 </image></ImageView>
-                           </children>
-                        </VBox>
-                     </children>
-                  </VBox>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+      <Label prefHeight="50.0" prefWidth="500.0" text="Clinician Appointment Management" textAlignment="CENTER" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Arial Narrow Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="299.0" layoutY="224.0" mnemonicParsing="false" onAction="#backtoLogin" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Home" textFill="#dddbdb" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAppointments" layoutX="297.0" layoutY="290.0" mnemonicParsing="false" onAction="#gotoAppointments" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Appointments" textFill="#dddbdb" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTasks" layoutX="311.0" layoutY="357.0" mnemonicParsing="false" onAction="#gotoTasks" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Tasks" textFill="#dddbdb" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRequests" layoutX="349.0" layoutY="417.0" mnemonicParsing="false" onAction="#gotoRequests" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Requests" textFill="#dddbdb" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnQuestionnaire" layoutX="332.0" layoutY="481.0" mnemonicParsing="false" onAction="#gotoQuestionnaire" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Questionnaire" textFill="#dddbdb" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="438.0" fitWidth="270.0" layoutX="27.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="60.0">
+         <image>
+            <Image url="@../login_page_2.images/2020.03.13-covid-19-a3-public-information-poster-english.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="393.0" fitWidth="321.0" layoutX="530.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
+         <image>
+            <Image url="@../login_page_2.images/16.03-covid-19-symptoms-a4-poster-page-001-424x600.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

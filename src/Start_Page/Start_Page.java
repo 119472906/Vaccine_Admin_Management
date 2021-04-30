@@ -1,5 +1,4 @@
 package Start_Page;
-//26 april 2021
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,15 +10,15 @@ public class Start_Page extends Application {
     
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));
-        
-        Scene scene = new Scene(root);
-        
+       
+        Parent root = FXMLLoader.load(getClass().getResource("/Views/Sign_In_Page.fxml"));    
+        Scene scene = new Scene(root);      
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
     public static void main(String[] args) {
+        
         launch(args);
     }
     

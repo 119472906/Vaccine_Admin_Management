@@ -11,19 +11,20 @@
       <ImageView fitHeight="479.0" fitWidth="915.0" pickOnBounds="true" preserveRatio="true" />
       <AnchorPane layoutX="512.0" layoutY="40.0" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #A22137;">
          <children>
-            <TextField fx:id="txtNewEmail" layoutX="63.0" layoutY="111.0" prefHeight="31.0" prefWidth="248.0" promptText="Email" />
-            <PasswordField fx:id="txtNewPassword" layoutX="63.0" layoutY="175.0" prefHeight="31.0" prefWidth="248.0" promptText="Password" />
-            <Button fx:id="btnRegister" layoutX="63.0" layoutY="261.0" mnemonicParsing="false" onAction="#Register" prefHeight="31.0" prefWidth="248.0" style="-fx-background-color: #e45652;" text="Register" textFill="#dad6d6" />
-            <Label fx:id="lblSignin" layoutX="159.0" layoutY="43.0" text="Sign Up" textAlignment="CENTER" textFill="#d0cccc">
+            <TextField fx:id="txtNewEmail" layoutX="64.0" layoutY="145.0" prefHeight="30.0" prefWidth="250.0" promptText="Email" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="150.0" />
+            <PasswordField fx:id="txtNewPassword" layoutX="61.0" layoutY="207.0" prefHeight="30.0" prefWidth="250.0" promptText="Password" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="210.0" />
+            <Button fx:id="btnRegister" layoutX="63.0" layoutY="261.0" mnemonicParsing="false" onAction="#Register" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #e45652;" text="Register" textFill="#dad6d6" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="270.0" />
+            <Label fx:id="lblSignin" layoutX="159.0" layoutY="43.0" prefHeight="30.0" prefWidth="75.0" text="Sign Up" textAlignment="CENTER" textFill="#d0cccc" AnchorPane.leftAnchor="147.5" AnchorPane.rightAnchor="147.5" AnchorPane.topAnchor="40.0">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="lblError" layoutX="64.0" layoutY="222.0" prefHeight="27.0" prefWidth="248.0" textAlignment="CENTER">
+            <Label fx:id="lblError" layoutX="60.0" layoutY="335.0" prefHeight="27.0" prefWidth="250.0" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
+            <TextField fx:id="txtUserID" layoutX="61.0" layoutY="106.0" prefHeight="30.0" prefWidth="250.0" promptText="5 Number ID" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="90.0" />
          </children>
       </AnchorPane>
       <Label fx:id="lblTitle1" layoutX="127.0" layoutY="23.0" text="Welcome to the HSE " textFill="#dddbdb">

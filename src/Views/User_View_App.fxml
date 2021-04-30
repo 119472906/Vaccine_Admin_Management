@@ -8,37 +8,50 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserViewAppController">
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="800.0" style="-fx-background-color: #0A544A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserViewAppController">
    <children>
-      <Label id="lblPortal" alignment="CENTER" layoutX="120.0" prefHeight="70.0" prefWidth="475.0" text=" HSE Vaccination Portal" textFill="#dddbdb" underline="true">
+      <Label id="lblPortal" alignment="CENTER" layoutX="120.0" prefHeight="50.0" prefWidth="400.0" text="HSE Vaccination Portal" textFill="#dddbdb" underline="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
          <font>
-            <Font name="Georgia Bold" size="18.0" />
+            <Font name="Arial Narrow Bold" size="35.0" />
          </font>
       </Label>
-      <ImageView id="imgHse" fitHeight="68.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../Desktop/BIS/Java/hse-ireland.jpg" />
-         </image>
-      </ImageView>
-      <Button id="btnBookApp" fx:id="btnBookApp" layoutY="70.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#Movetoappointment" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Book Appointment" textFill="#dddbdb">
+      <Button id="btnBookApp" fx:id="btnBookApp" layoutY="70.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#ToAppPage" prefHeight="80.0" prefWidth="245.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Book Appointment" textFill="#dddbdb" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="60.0">
          <font>
-            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
          </font>
       </Button>
-      <Button id="btnCancelApp" fx:id="btnCancelApp" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#Movetocancellation" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="Cancel Appointment" textFill="#dddbdb">
+      <Button id="btnCancelApp" fx:id="btnCancelApp" layoutX="200.0" layoutY="70.0" mnemonicParsing="false" onAction="#ToCancelAppPage" prefHeight="80.0" prefWidth="245.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="Cancel Appointment" textFill="#dddbdb" AnchorPane.rightAnchor="277.5" AnchorPane.topAnchor="60.0">
          <font>
-            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
          </font>
       </Button>
-      <Button id="btnView" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: e45652;" text="View Timeslots" textFill="#dddbdb">
+      <Button id="btnView" fx:id="btnTimeslots" layoutX="400.0" layoutY="70.0" mnemonicParsing="false" onAction="#ToTimeslotsPage" prefHeight="80.0" prefWidth="245.0" style="-fx-background-color: e45652; -fx-background-radius: 25;" text="View Timeslots" textFill="#dddbdb" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="60.0">
          <font>
-            <Font name="Lucida Sans Typewriter Regular" size="15.0" />
+            <Font name="Lucida Sans Typewriter Regular" size="20.0" />
          </font>
       </Button>
-      <Button id="btnViewApp" fx:id="btnBook" layoutX="270.0" layoutY="247.0" mnemonicParsing="false" onAction="#Savecontents" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="View Appointment Details" textFill="#dddbdb" />
-      <TextField id="txtAppointment" layoutX="270.0" layoutY="200.0" prefHeight="31.0" prefWidth="230.0" />
-      <Button id="btnBack" fx:id="btnBack" layoutX="185.0" layoutY="534.0" mnemonicParsing="false" onAction="#Movetohome" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652;" text="Back" textFill="#dddbdb" />
-      <Label layoutX="65.0" layoutY="200.0" text="Enter Appointment ID:" textFill="#dddbdb">
+      <Button id="btnViewApp" fx:id="btnViewApps" layoutX="285.0" layoutY="244.0" mnemonicParsing="false" onAction="#DisplayApps" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: e45652; -fx-background-radius: 15;" text="View Appointment Details" textFill="#dddbdb" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="245.0" />
+      <TextField id="txtAppointment" fx:id="txtAppID" layoutX="285.0" layoutY="195.0" prefHeight="30.0" prefWidth="230.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="200.0" />
+      <Button id="btnBack" fx:id="btnBacktoLogin" layoutX="185.0" layoutY="534.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: e45652; -fx-background-radius: 10;" text="Back" textFill="#dddbdb" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="65.0" layoutY="200.0" prefHeight="30.0" prefWidth="190.0" text="Enter Appointment ID:" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtApp" fx:id="txtStatus" layoutX="338.0" layoutY="464.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="395.0" />
+      <Label id="lblApp" layoutX="133.0" layoutY="464.0" prefHeight="30.0" prefWidth="175.0" text="Appointment Status:" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="395.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label id="lblClinic" layoutX="133.0" layoutY="364.0" prefHeight="30.0" prefWidth="120.0" text="Clinic:" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="txtClinic" fx:id="txtClinic" layoutX="338.0" layoutY="364.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="350.0" />
+      <TextField id="txtLocation" fx:id="txtLoc" layoutX="338.0" layoutY="314.0" prefHeight="30.0" prefWidth="300.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="305.0" />
+      <Label id="lblLocation" layoutX="133.0" layoutY="314.0" prefHeight="30.0" prefWidth="120.0" text="Location:" textFill="#dddbdb" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="305.0">
          <font>
             <Font name="Arial" size="18.0" />
          </font>

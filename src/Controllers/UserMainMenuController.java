@@ -13,23 +13,23 @@ public class UserMainMenuController implements Initializable {
     
       
     @FXML private Button btnBookApp;
-    public void Movetoappointment() throws Exception{
+    public void MoveToAppointment() throws Exception{
         Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_Booking.fxml"));
          Stage window = (Stage) btnBookApp.getScene().getWindow();
          window.setScene(new Scene (root));
     }
     
     @FXML private Button btnCancelApp; 
-    public void Movetocancellation() throws Exception{
+    public void MoveToCancellation() throws Exception{
         Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_Cancel.fxml"));
          Stage window = (Stage) btnCancelApp.getScene().getWindow();
          window.setScene(new Scene (root));
     }
     
-    @FXML private Button btnView;    
-    public void Movetoview() throws Exception{
+    @FXML private Button btnTimeslots;    
+    public void ToTimeslotsPage() throws Exception{
         Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("/Views/User_View_App.fxml"));
-         Stage window = (Stage) btnView.getScene().getWindow();
+         Stage window = (Stage) btnTimeslots.getScene().getWindow();
          window.setScene(new Scene (root));
     }
     
